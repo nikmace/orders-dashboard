@@ -260,6 +260,15 @@ hr {
         border-radius: 5px;
         margin-bottom: 10px;
 
+        span {
+            width: 40px;
+
+            &:hover {
+                cursor: pointer;
+                opacity: .7;
+            }
+        }
+
         input {
             margin-left: 15px;
         }
