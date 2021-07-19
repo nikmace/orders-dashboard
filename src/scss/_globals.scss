@@ -1,0 +1,19 @@
+@import 'variables';
+
+* {
+    font-family: 'Inter', system-ui;
+    font-size: 14px;
+    font-weight: 300;
+    color: $text-color;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    background: $pink !important;
+}

@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import './scss/styles.scss';
+
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Search from './components/Search';
+
+import Orders from './pages/Orders';
+
+import OrderContextProvider from './context/OrderContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <OrderContextProvider>
+      <div className="wrapper">
+          <div className="wrapper__white">            
+              <Header />
+              <hr />     
+              <Navbar />
+              <hr />
+          </div>
+          <div className="wrapper__grey">
+              <Search />
+              <Orders />
+          </div>
+      </div>
+    </OrderContextProvider>
   );
 }
 
