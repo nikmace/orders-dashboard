@@ -23,7 +23,7 @@ const Orders = () => {
                         return <Order key={order.id} order={order}/>
                     })}
                 </section>
-            </section>
+        </section>
     )
 }
 

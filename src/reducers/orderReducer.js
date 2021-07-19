@@ -14,7 +14,7 @@ export const orderReducer = (state, action) => {
                 id: uuidv4(),
             }]
         case 'REMOVE_ORDER':
-            return state.filter(order => order.id !== action.order.id);
+            return state.filter(order => order.id !== action.id);
         case 'FILTER_ORDER':
             return state
         default:

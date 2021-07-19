@@ -1,8 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import moment from 'moment';
+
+import { OrderContext } from '../context/OrderContext';
 
 const Order = ({ order }) => {
     const [checked, setChecked] = useState(false);
+    const { dispatch } = useContext(OrderContext);
+
+    const handleClick = () => {
+        dispatch({ type: 'REMOVE_ORDER', id: order.id})
+    }
+
     return (
         <article 
             className="orders__container" 
@@ -23,6 +31,14 @@ const Order = ({ order }) => {
             <p className={`orders__container-payment ${order.paymentStatus === 'Paid' ? 'green' : 'yellow'}`}>{order.paymentStatus}</p>
             <p className={`orders__container-order ${order.orderStatus === 'Fulfilled' ? 'blue' : 'yellow'}`}>{order.orderStatus}</p>
             <p className="orders__container-total">${order.total}</p>
+            
+            <span 
+                hidden={!checked} 
+                style={{fontSize: '18px'}} 
+                onClick={handleClick}
+            >
+                ✕
+            </span>
         </article>
     )
 }
