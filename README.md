@@ -4,10 +4,10 @@
 
 A web application made with React JS. 
 
-![GitHub repo size](https://img.shields.io/github/repo-size/nikmace/teslasteel)
-![GitHub](https://img.shields.io/github/license/nikmace/teslasteel?color=brightgreen)
-![GitHub last commit](https://img.shields.io/github/last-commit/nikmace/teslasteel?color=yellow&logo=JavaScript)
-![GitHub issues](https://img.shields.io/github/issues/nikmace/teslasteel?color=important&logo=Visual%20Studio)
+![GitHub repo size](https://img.shields.io/github/repo-size/nikmace/orders-dashboard)
+![GitHub](https://img.shields.io/github/license/nikmace/orders-dashboard?color=brightgreen)
+![GitHub last commit](https://img.shields.io/github/last-commit/orders-dashboard/teslasteel?color=yellow&logo=JavaScript)
+![GitHub issues](https://img.shields.io/github/issues/nikmace/orders-dashboard?color=important&logo=Visual%20Studio)
 
 ## Getting started
 These instructions will help you to run the project. 
